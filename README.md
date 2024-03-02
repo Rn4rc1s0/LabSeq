@@ -39,7 +39,7 @@ The LabSeq Service is a RESTful backend application built with the Quarkus frame
    Quarkus supports live coding with hot reload. To start the application in development mode:
 
    ```shell script
-   ./mvnw compile quarkus:dev
+   ./mvnw quarkus:dev
    ```
 
    Or you can also use:
