@@ -135,7 +135,7 @@ Open your browser and go to `http://localhost:3000`. Enter a non-negative intege
 
 ### Documentation Link
 
-For detailed API documentation, including available endpoints and response formats, visit `http://localhost:8080/labseq/q/swagger-ui` (Inside the GUI there is a link to the documentation).
+For detailed API documentation, including available endpoints and response formats, visit `http://localhost:8080/q/swagger-ui` (Inside the GUI there is a link to the documentation).
 
 ## Contributing
 
