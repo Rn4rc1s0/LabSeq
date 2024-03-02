@@ -16,6 +16,9 @@ public class LabSeqService {
     }
 
     public int calculateLabSeq(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("Index cannot be negative.");
+        }
 
         if (cache.containsKey(n)) {
             return cache.get(n);
