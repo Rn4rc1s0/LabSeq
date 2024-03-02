@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LabSeq GUI</title>
+</head>
+<body>
+<input type="number" id="nValue" placeholder="Enter n">
+<button onclick="getLabSeq()">Get LabSeq Value</button>
+<p id="result"></p>
+
+<script>
+    function getLabSeq() {
+        var n = document.getElementById("nValue").value;
+        fetch(`http://localhost:8080/labseq/${n}`)
+            .then(response => response.text())
+            .then(data => document.getElementById("result").innerText = data)
+            .catch(error => console.error('Error:', error));
+    }
+</script>
+</body>
+</html>
